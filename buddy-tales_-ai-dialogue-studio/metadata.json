@@ -1,0 +1,5 @@
+{
+  "name": "Buddy Tales: AI Dialogue Studio",
+  "description": "An AI-powered web application to transform scripts into high-quality, multi-character audio dialogues. Upload scripts, assign unique voices to characters, inject emotional styles, and export scene-by-scene audio using Gemini's text-to-speech capabilities.",
+  "requestFramePermissions": []
+}
