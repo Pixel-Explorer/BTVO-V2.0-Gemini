@@ -10,8 +10,7 @@
   },
   "dependencies": {
     "react": "^19.1.0",
-    "react-dom/client": "19.1.0-beta-04b05886-20240514",
-    "@google/genai": "^0.14.2",
+    "@google/genai": "^1.10.0",
     "lucide-react": "^0.417.0",
     "mammoth": "^1.8.0",
     "pdfjs-dist": "4.4.168",
