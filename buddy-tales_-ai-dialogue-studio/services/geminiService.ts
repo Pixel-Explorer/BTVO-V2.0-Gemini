@@ -8,10 +8,13 @@ import { pcmToWav, generateSineWave } from '../utils/audioUtils';
 // as specified in the project brief. The output is a placeholder tone, not real speech.
 // Real speech for PREVIEWS is handled separately using the browser's built-in TTS.
 
-if (!process.env.API_KEY) {
+// The Gemini API key is provided via the GEMINI_API_KEY environment variable at
+// runtime. The value is also embedded during build so the app works with `vite
+// preview`.
+if (!process.env.GEMINI_API_KEY) {
     throw new Error("Gemini API key not found in environment variables.");
 }
-const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
+const ai = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY });
 
 const TEXT_MODEL = 'gemini-2.5-flash';
 
